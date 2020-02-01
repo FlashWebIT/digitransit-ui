@@ -12085,7 +12085,15 @@ react-swipeable-views-core@^0.13.1:
     "@babel/runtime" "7.0.0"
     warning "^4.0.1"
 
-react-swipeable-views-utils@0.13.1, react-swipeable-views-utils@^0.13.1:
+react-swipeable-views-core@^0.13.7:
+  version "0.13.7"
+  resolved "https://registry.yarnpkg.com/react-swipeable-views-core/-/react-swipeable-views-core-0.13.7.tgz#c082b553f26e83fd20fc17f934200eb717023c8a"
+  integrity sha512-ekn9oDYfBt0oqJSGGwLEhKvn+QaqMGTy//9dURTLf+vp7W5j6GvmKryYdnwJCDITaPFI2hujXV4CH9krhvaE5w==
+  dependencies:
+    "@babel/runtime" "7.0.0"
+    warning "^4.0.1"
+
+react-swipeable-views-utils@0.13.1:
   version "0.13.1"
   resolved "https://registry.yarnpkg.com/react-swipeable-views-utils/-/react-swipeable-views-utils-0.13.1.tgz#8e604af7316d409f22d8c47f841859dc150df30b"
   dependencies:
@@ -12096,15 +12104,28 @@ react-swipeable-views-utils@0.13.1, react-swipeable-views-utils@^0.13.1:
     react-event-listener "^0.6.0"
     react-swipeable-views-core "^0.13.1"
 
-react-swipeable-views@0.13.1:
-  version "0.13.1"
-  resolved "https://registry.yarnpkg.com/react-swipeable-views/-/react-swipeable-views-0.13.1.tgz#4f074280b09d2247d284a6e3831fd3763ee0ed39"
+react-swipeable-views-utils@^0.13.7:
+  version "0.13.7"
+  resolved "https://registry.yarnpkg.com/react-swipeable-views-utils/-/react-swipeable-views-utils-0.13.7.tgz#c939eca03bfcfb4cc6aea4088859407146ef82cd"
+  integrity sha512-XdHWE2Ea9uBJeI3U7KHZ8pVG/OpcE0lAg6n6mBCXgYFFMCbizU0OXOhPHwf9zsjnt78ClK1Oof2jeluHwhTI3g==
+  dependencies:
+    "@babel/runtime" "7.0.0"
+    fbjs "^0.8.4"
+    keycode "^2.1.7"
+    prop-types "^15.6.0"
+    react-event-listener "^0.6.0"
+    react-swipeable-views-core "^0.13.7"
+
+react-swipeable-views@0.13.7:
+  version "0.13.7"
+  resolved "https://registry.yarnpkg.com/react-swipeable-views/-/react-swipeable-views-0.13.7.tgz#377f024885c180010b0975cc2748fd9e3510dee0"
+  integrity sha512-+A/ouEQkQVyX/naMWy8rK7eiu4FZyYcCm79OsFLEUloUp+Lt6bjG61tZaXNwPb7ybA7VAR72asY7GoOIJY0qMg==
   dependencies:
     "@babel/runtime" "7.0.0"
     dom-helpers "^3.2.1"
     prop-types "^15.5.4"
-    react-swipeable-views-core "^0.13.1"
-    react-swipeable-views-utils "^0.13.1"
+    react-swipeable-views-core "^0.13.7"
+    react-swipeable-views-utils "^0.13.7"
     warning "^4.0.1"
 
 react-test-renderer@^16.0.0-0:
