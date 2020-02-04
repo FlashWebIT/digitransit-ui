@@ -6489,10 +6489,10 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-git-precommit-checks@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/git-precommit-checks/-/git-precommit-checks-3.0.0.tgz#47954caa6251294af15c9dd925d141b0b95511e9"
-  integrity sha512-BAM16AHlQTHgOlMl1gIGzk27wId+6ROEZ7hq2RBBJTQ92OqVS2/vC7E20QK7w3moR/7unQF27QpJxT7vgsTOGw==
+git-precommit-checks@3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/git-precommit-checks/-/git-precommit-checks-3.0.2.tgz#3657a2be85ad6b832b7d3829a117595fe4892c3b"
+  integrity sha512-6xvafdXaWf0J17+6ieRyye78EQy9DHT9dPq+n7W80XFM6aWd6opIzDO71PKKGTQ/rkdoAIOi6Af/xk1fCtcmBw==
   dependencies:
     cli-table "^0.3.1"
     find-up "^4.1.0"
