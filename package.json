@@ -210,7 +210,7 @@
     "eslint-plugin-import": "2.15.0",
     "eslint-plugin-jsx-a11y": "6.1.2",
     "eslint-plugin-prettier": "2.6.0",
-    "eslint-plugin-react": "7.12.4",
+    "eslint-plugin-react": "7.19.0",
     "esm": "3.2.25",
     "favicons-webpack-plugin": "0.0.9",
     "fetch-mock": "7.3.1",
