@@ -140,7 +140,7 @@
     "material-ui": "0.20.2",
     "moment": "2.24.0",
     "moment-timezone": "0.5.23",
-    "morgan": "^1.9.1",
+    "morgan": "^1.10.0",
     "mqtt": "3.0.0",
     "name-all-modules-plugin": "1.0.1",
     "node-fetch": "2.3.0",
