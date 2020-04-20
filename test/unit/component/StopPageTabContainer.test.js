@@ -6,6 +6,7 @@ import { FormattedMessage } from 'react-intl';
 import { shallowWithIntl } from '../helpers/mock-intl-enzyme';
 import { AlertSeverityLevelType } from '../../../app/constants';
 import { Component as StopPageTabContainer } from '../../../app/component/StopPageTabContainer';
+import { PREFIX_DISRUPTION } from '../../../app/util/path';
 
 describe('<StopPageTabContainer />', () => {
   it('should render the disruptions tab for stops', () => {
@@ -28,7 +29,7 @@ describe('<StopPageTabContainer />', () => {
         .find('.stop-tab-singletab')
         .at(3)
         .props().to,
-    ).to.contain('/hairiot');
+    ).to.contain(`/${PREFIX_DISRUPTION}`);
   });
 
   it('should render the disruptions tab for terminals', () => {
@@ -310,4 +311,73 @@ describe('<StopPageTabContainer />', () => {
         .props().id,
     ).to.equal('routes-platforms');
   });
+});
+
+// DT-3387
+it('should render "Routes, platforms" when vehicleMode is rail but route´s mode is bus', () => {
+  const props = {
+    breakpoint: 'large',
+    children: <div />,
+    location: {
+      pathname: 'foobar',
+    },
+    params: {
+      stopId: 'HSL:2211275',
+    },
+    routes: [],
+    stop: {
+      vehicleMode: 'RAIL',
+      routes: [
+        {
+          mode: 'BUS',
+          patterns: [
+            {
+              code: 'HSL:9665A:0:02',
+            },
+          ],
+        },
+      ],
+    },
+  };
+  const wrapper = shallowWithIntl(<StopPageTabContainer {...props} />);
+  expect(
+    wrapper
+      .find(FormattedMessage)
+      .at(2)
+      .props().id,
+  ).to.equal('routes-platforms');
+});
+
+it('should render "Routes, platforms" when vehicleMode is subway but route´s mode is bus', () => {
+  const props = {
+    breakpoint: 'large',
+    children: <div />,
+    location: {
+      pathname: 'foobar',
+    },
+    params: {
+      stopId: 'HSL:2211275',
+    },
+    routes: [],
+    stop: {
+      vehicleMode: 'SUBWAY',
+      routes: [
+        {
+          mode: 'BUS',
+          patterns: [
+            {
+              code: 'HSL:9665A:0:02',
+            },
+          ],
+        },
+      ],
+    },
+  };
+  const wrapper = shallowWithIntl(<StopPageTabContainer {...props} />);
+  expect(
+    wrapper
+      .find(FormattedMessage)
+      .at(2)
+      .props().id,
+  ).to.equal('routes-platforms');
 });
